@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m 'This is an auto lazy pusher'
+git push
