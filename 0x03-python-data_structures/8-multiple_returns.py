@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    if len(sentence) == 0:
-        tupi = (0, "None")
-    else: 
-        tupi=(len(sentence), sentence[0])
-    return(tupi)
+    """Returns the length of a string and its first character."""
+    if sentence == "":
+        return (0, None)
+    return (len(sentence), sentence[0])
