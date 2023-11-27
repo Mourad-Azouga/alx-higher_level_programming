@@ -1,17 +1,26 @@
 #!/usr/bin/python3
-""" Rectangle class."""
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
-    """a rectangle."""
+    """Represent a rectangle.
+
+    Attributes:
+        number_of_instances (int): The number of Rectangle instances.
+        print_symbol (any): The symbol used for string representation.
+    """
+
+    number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
 
         Args:
-            width (int): The width
-            height (int): The height
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
         """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -30,7 +39,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Gets the height of the Rectangle."""
+        """Get/set the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -42,17 +51,18 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """area"""
+        """Return the area of the Rectangle."""
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """perimeter"""
+        """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """Rectangle with the greater area.
+        """Return the Rectangle with the greater area.
 
         Args:
             rect_1 (Rectangle): The first Rectangle.
@@ -69,9 +79,9 @@ class Rectangle:
         return (rect_2)
 
     def __str__(self):
-        """printable representation
+        """Return the printable representation of the Rectangle.
 
-        the # character.
+        Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
