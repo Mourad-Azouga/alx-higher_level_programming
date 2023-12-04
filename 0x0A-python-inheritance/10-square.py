@@ -2,7 +2,7 @@
 Rectangle = __import__('9-rectangle').Rectangle
 """lets make a square"""
 
-class square:
+class square(Rectangle):
     def __init__(self, size):
         """
         initializes the square
