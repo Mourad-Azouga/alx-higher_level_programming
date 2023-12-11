@@ -39,36 +39,34 @@ class Square(Rectangle):
             **kwargs (dict): New key/value pairs of attributes.
         """
         if args and len(args) != 0:
-            counter = 0
+            a = 0
             for arg in args:
-                match counter:
-                    case 0:
-                        if arg is None:
-                            self.__init__(self.width, self.height, self.x, self.y)
-                        else:
-                            self.id = arg
-                    case 1:
-                        self.size = arg
-                    case 2:
-                        self.x = arg
-                    case 3:
-                        self.y = arg
-                counter += 1
-        #Here we'll use kwargs
-        elif kwargs and len(kwargs) != 0:#If the args don't exist but the kwargs do exist
-            for key, val in kwargs.items():
-                match key:
-                    case "id":
-                        if val is None:
-                            self.__init__(self.width, self.height, self.x, self.y)
-                        else:
-                            self.id = val
-                    case "size":
-                        self.width = val
-                    case "x":
-                        self.x = val
-                    case "y":
-                        self.y = val       
+                if a == 0:
+                    if arg is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif a == 1:
+                    self.size = arg
+                elif a == 2:
+                    self.x = arg
+                elif a == 3:
+                    self.y = arg
+                a += 1
+
+        elif kwargs and len(kwargs) != 0:
+            for k, v in kwargs.items():
+                if k == "id":
+                    if v is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = v
+                elif k == "size":
+                    self.size = v
+                elif k == "x":
+                    self.x = v
+                elif k == "y":
+                    self.y = v
 
     def to_dictionary(self):
         """Return the dictionary representation of the Square."""
