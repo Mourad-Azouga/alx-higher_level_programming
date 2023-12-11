@@ -1,1 +1,3 @@
-This is a README for the project 0x08-python-more_classes
+This README is made for the REPO:
+ALX-HIGHER-LEVEL-PROGRAMMING
+by AZOUGA Mourad
