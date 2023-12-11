@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Let's make a square!"""
 from models.rectangle import Rectangle
 class Square(Rectangle):
