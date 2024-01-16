@@ -1,4 +1,5 @@
 -- SAY LY NAME
-SELECT `score`, IF EXISTS `name`
+SELECT `score`,`name`
 FROM `second_table`
-ORDER BY `score`
+WHERE `name` != ""
+ORDER BY `score` DESC;
