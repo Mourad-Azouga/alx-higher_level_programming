@@ -1,2 +1,2 @@
---omg a comment--
+-- omg a comment
 SHOW DATABASES;
