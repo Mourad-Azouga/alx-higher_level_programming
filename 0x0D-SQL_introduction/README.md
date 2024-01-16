@@ -1,0 +1,1 @@
+This is a readme for the SQL introduction project where we'll learn about SQL and how to make query
