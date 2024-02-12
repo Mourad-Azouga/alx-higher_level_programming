@@ -1,8 +1,9 @@
 #!/usr/bin/node
+let max, smax;
 if (process.argv.length < 4) {
-  console.log('0');
+  smax = 0;
 } else {
-  let max, smax, i;
+  let i;
   max = smax = process.argv[2];
   for (i = 2; i < process.argv.length; i++) {
     if (process.argv[i] > max) {
@@ -10,5 +11,5 @@ if (process.argv.length < 4) {
       max = process.argv[i];
     }
   }
-  console.log(smax);
 }
+console.log(smax);
