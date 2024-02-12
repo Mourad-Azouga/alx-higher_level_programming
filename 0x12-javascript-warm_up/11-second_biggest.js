@@ -10,5 +10,5 @@ if (process.argv.length < 4) {
       max = process.argv[i];
     }
   }
-console.log(smax);
+  console.log(smax);
 }
