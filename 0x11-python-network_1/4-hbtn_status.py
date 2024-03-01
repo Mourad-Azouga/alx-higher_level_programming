@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""uses requests to find the status of the url"""   
+"""uses requests to find the status of the url
+But using requests instead of urllib
+"""
 import requests
 
 
