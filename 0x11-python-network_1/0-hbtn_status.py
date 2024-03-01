@@ -8,9 +8,8 @@
 if __name__ == '__main__':
     import urllib.request
 
-    request = urllib.request.Request("https://intranet.hbtn.io/status")
-    with urllib.request.urlopen(request) as response:        
-        html = response.read()
+    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
+        html = res.read()
         print("Body response:")
         print("\t- type: {}".format(type(html)))
         print("\t- content: {}".format(html))
