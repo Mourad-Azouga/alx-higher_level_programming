@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """A Python script ahtt
 - takes a URL
-- sends request 
+- sends request
 - displays the body of the response.
 """
 

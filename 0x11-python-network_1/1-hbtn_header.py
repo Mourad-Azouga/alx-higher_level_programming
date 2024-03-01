@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""A little script that 
+"""A little script that
 - takes in a URL from argv,
-- sends a request to the URL 
+- sends a request to the URL
 - displays the X-Request-Id variable found in the header response.
 """
 
