@@ -4,6 +4,7 @@
 - sends a request to the URL 
 - displays the X-Request-Id variable found in the header response.
 """
+
 import sys
 import urllib.request
 
