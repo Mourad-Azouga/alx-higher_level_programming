@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""
-fetches https://alx-intranet.hbtn.io/status
+"""fetches https://alx-intranet.hbtn.io/status
 Using utllib package
 Displaying the informations in a specific manner
 """
+
 if __name__ == '__main__':
     import urllib.request
 
