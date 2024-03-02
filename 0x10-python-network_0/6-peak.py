@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Finds a peak of a list of a wowow"""
+
 def find_peak(list_of_integers):
     """Finds the peak"""
 
