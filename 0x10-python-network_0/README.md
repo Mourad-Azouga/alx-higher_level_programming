@@ -81,4 +81,6 @@ Other extension methods.
 	->-o or --output
 	.curl -sI is a silent HEAD request to retrieve the headers of a resource without the actual content.
 	.curl -sX is used for sending silent requests with a custom HTTP method.
+	.curl -d is used to include data in the request BODY.
+	.curl -H to add customer HEADERS to the request
 
