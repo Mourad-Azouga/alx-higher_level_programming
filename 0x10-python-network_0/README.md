@@ -79,5 +79,6 @@ Other extension methods.
 	->-b or --cookie
 	.What is the curl option to save the body of the resulting response to a file?
 	->-o or --output
-
+	.curl -sI is a silent HEAD request to retrieve the headers of a resource without the actual content.
+	.curl -sX is used for sending silent requests with a custom HTTP method.
 
